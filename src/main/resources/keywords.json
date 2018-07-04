@@ -1,0 +1,232 @@
+[
+  {
+    "root":"eau",
+    "score": 10,
+    "variation":[],
+    "children":[
+      {
+        "word":"pression",
+        "score":10,
+        "children":[],
+        "variation":[]
+      },
+      {
+        "word":"couleur",
+        "score":5,
+        "children":[],
+        "variation":[]
+      },
+      {
+        "word":"potable",
+        "score":1,
+        "children":[],
+        "variation":[]
+      },
+      {
+        "word":"fuite",
+        "score":10,
+        "children":[],
+        "variation":[]
+      },
+      {
+        "word":"goût",
+        "score":5,
+        "children":[],
+        "variation":[
+          "gout"
+        ]
+      },
+      {
+        "word":"consommation",
+        "score":1,
+        "children":[],
+        "variation":[
+
+        ]
+      },
+      {
+        "word":"château",
+        "score":1,
+        "children":[],
+        "variation":[
+          "chateau"
+        ]
+      },
+      {
+        "word":"compteur",
+        "score":1,
+        "children":[],
+        "variation":[
+          "conpteur",
+          "conteur",
+          "comteur"
+        ]
+      },
+      {
+        "word":"dégât",
+        "score":10,
+        "children":[],
+        "variation":[
+          "dégat",
+          "degat"
+        ]
+      },
+      {
+        "word":"chasse",
+        "score":1,
+        "children":[],
+        "variation":[
+        ]
+      },
+      {
+        "word":"conduite",
+        "score":1,
+        "children":[],
+        "variation":[
+        ]
+      },
+      {
+        "word":"fontaine",
+        "score":1,
+        "children":[],
+        "variation":[
+        ]
+      },
+      {
+        "word":"robinet",
+        "score":1,
+        "children":[],
+        "variation":[
+          "robiner",
+          "robiné"
+        ]
+      },
+      {
+        "word":"réseau",
+        "score":1,
+        "children":[],
+        "variation":[
+          "reseau",
+          "resau"
+        ]
+      },
+      {
+        "word":"réservoir",
+        "score":1,
+        "children":[],
+        "variation":[
+          "reservoir"
+        ]
+      },
+      {
+        "word":"tuyau",
+        "score":1,
+        "children":[],
+        "variation":[
+        ]
+      },
+      {
+        "word":"arroser",
+        "score":1,
+        "children":[],
+        "variation":[
+        ]
+      },
+      {
+        "word":"chlore",
+        "score":1,
+        "children":[],
+        "variation":[
+        ]
+      },
+      {
+        "word":"ph",
+        "score":1,
+        "children":[],
+        "variation":[
+        ]
+      },
+      {
+        "word":"température",
+        "score":1,
+        "children":[],
+        "variation":[
+        ]
+      },
+      {
+        "word":"débit",
+        "score":5,
+        "children":[],
+        "variation":[
+        ]
+      }
+    ]
+  },
+  {
+    "root": "événement",
+    "score": 10,
+    "variation":[
+      "evenement",
+      "évenement"
+    ],
+    "children": [
+      {
+        "word": "festival",
+        "score": 1,
+        "children": [],
+        "variation": []
+      },
+      {
+        "word": "marathon",
+        "score": 1,
+        "children": [],
+        "variation": [
+          "maraton"
+        ]
+      },
+      {
+        "word": "concert",
+        "score": 1,
+        "children": [],
+        "variation": []
+      }
+    ]
+  },
+  {
+    "root": "incendie",
+    "score": 5,
+    "variation":[],
+    "children": [
+      {
+        "word": "feu",
+        "score": 10,
+        "children": [],
+        "variation": []
+      },
+      {
+        "word": "brasier",
+        "score": 10,
+        "children": [],
+        "variation": []
+      },
+      {
+        "word": "flamme",
+        "score": 1,
+        "children": [],
+        "variation": []
+      },
+      {
+        "word": "embraser",
+        "score": 10,
+        "children": [],
+        "variation": []
+      },
+      {
+        "word": "pompier",
+        "score": 5,
+        "children": [],
+        "variation": []
+      }
+    ]
+  }
+]

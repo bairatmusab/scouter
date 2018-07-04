@@ -1,0 +1,41 @@
+prefix db-owl: <http://dbpedia.org/ontology/>
+prefix url-resource: <http://fr.dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix prop-fr: <http://fr.dbpedia.org/property/>
+prefix  dc: <http://purl.org/dc/elements/1.1/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+select * where {
+       ?evenements rdf:type db-owl:Event .
+       ?evenements db-owl:wikiPageWikiLink url-resource:Versailles .
+       OPTIONAL {
+                 ?evenements prop-fr:latitude ?latitude .
+       FILTER (
+                 ?latitude >= 48.7374199768179 &&
+                 ?latitude < 48.8781161065379
+       )}
+       OPTIONAL {
+                 ?evenements prop-fr:longitude ?longitude .
+       FILTER (
+                 ?longitude >= 1.96944422049222 &&
+                 ?longitude < 2.22459235221894
+       )}
+       OPTIONAL {
+                 ?evenements rdfs:comment ?description .
+       }
+       OPTIONAL {
+                 ?evenements dbo:startDate ?startDate .
+       }
+       OPTIONAL {
+                 ?evenements dbo:endDate ?endDate .
+       }
+       OPTIONAL {
+                 ?evenements rdfs:label ?label .
+       }
+       FILTER (
+                       ?startDate > "today date"^^xsd:date
+              )
+
+}
