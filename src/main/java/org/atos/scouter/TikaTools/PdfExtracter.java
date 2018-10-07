@@ -38,10 +38,10 @@ public class PdfExtracter{
             Parser parser = new AutoDetectParser(new TikaConfig(getClass().getClassLoader()));
             parser.parse(inputStream, handler, meta, new ParseContext());
 
-            String out = handler.toString().trim().replaceAll(" +", " ");;
+            String out = handler.toString().trim().replaceAll(" +", " ");
             //.replace("\n", "").replace("\r", "")
 
-            findNames(out);
+            findNames("Bonjour Monsieur Ahmad");
         }
         catch( Exception t )
         {
@@ -59,7 +59,7 @@ public class PdfExtracter{
 
        // String [] tokens = openNLP.learnableTokenize(input);
 
-        List<String> persons =  openNLP.applyNLPner(input,OpenNLP.nerOptions.LOCATION);
+        List<String> persons =  openNLP.applyNLPner(input,OpenNLP.nerOptions.PERSON);
         for (String s: persons) {
             System.out.println(s);
         }
